@@ -145,12 +145,12 @@
 					<div class="dashboard-nav-inner">
 
 						<ul data-submenu-title="Candidate Dashboard">
-							<li class="active"><a href="./dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="./dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
 							<li><a href="./dashboard-my-profile.html"><i class="icon-feather-user"></i> My Profile</a></li>
 							<li><a href="./dashboard-my-resume.html"><i class="icon-material-outline-description"></i> My Resume</a></li>
 							<li><a href="./dashboard-applied-jobs.html"><i class="icon-material-outline-business-center"></i> Applied Jobs</a></li>
 							<li><a href="./dashboard-favourite-jobs.html"><i class="icon-material-outline-favorite-border"></i> Favourite Jobs</a></li>
-							<li><a href="./dashboard-reviews.html"><i class="icon-material-outline-rate-review"></i> Reviews</a></li>
+							<li class="active"><a href="./dashboard-reviews.html"><i class="icon-material-outline-rate-review"></i> Reviews</a></li>
 						</ul>
 						
 					</div>
@@ -170,158 +170,94 @@
 			
 			<!-- Dashboard Headline -->
 			<div class="dashboard-headline">
+				<h3>Reviews</h3>
 
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs" class="dark">
 					<ul>
 						<li><a href="#">Home</a></li>
-						<li>Dashboard</li>
+						<li><a href="#">Dashboard</a></li>
+						<li>Reviews</li>
 					</ul>
 				</nav>
 			</div>
 	
-			<!-- Fun Facts Container -->
-			<div class="fun-facts-container">
-				<div class="fun-fact" data-fun-fact-color="#b81b7f">
-					<div class="fun-fact-text">
-						<span>Jobs Applied</span>
-						<h4>4</h4>
-					</div>
-					<div class="fun-fact-icon"><i class="icon-material-outline-business-center"></i></div>
-				</div>
-				<div class="fun-fact" data-fun-fact-color="#FF2D00">
-					<div class="fun-fact-text">
-						<span>Favourite Jobs</span>
-						<h4>7</h4>
-					</div>
-					<div class="fun-fact-icon"><i class="icon-material-outline-favorite-border"></i></div>
-				</div>
-				
-				<div class="fun-fact" data-fun-fact-color="#efa80f">
-					<div class="fun-fact-text">
-						<span>Job Alerts</span>
-						<h4>2</h4>
-					</div>
-					<div class="fun-fact-icon"><i class="icon-feather-bell"></i></div>
-				</div>
-
-				<!-- Last one has to be hidden below 1600px, sorry :( -->
-				<div class="fun-fact" data-fun-fact-color="#2a41e6">
-					<div class="fun-fact-text">
-						<span>This Month Views</span>
-						<h4>12</h4>
-					</div>
-					<div class="fun-fact-icon"><i class="icon-feather-trending-up"></i></div>
-				</div>
-			</div>
-			
-			<!-- Row -->
-			<div class="row">
-
-				<div class="col-xl-8">
-					<!-- Dashboard Box -->
-					<div class="dashboard-box main-box-in-row">
-						<div class="headline">
-							<h3><i class="icon-feather-bar-chart-2"></i> Your Profile Views</h3>
-							<div class="sort-by">
-								<select class="selectpicker hide-tick">
-									<option>Last 6 Months</option>
-									<option>This Year</option>
-									<option>This Month</option>
-								</select>
-							</div>
-						</div>
-						<div class="content">
-							<!-- Chart -->
-							<div class="chart">
-								<canvas id="chart" width="100" height="45"></canvas>
-							</div>
-						</div>
-					</div>
-					<!-- Dashboard Box / End -->
-				</div>
-				<div class="col-xl-4">
-
-					<!-- Dashboard Box -->
-					<!-- If you want adjust height of two boxes 
-						 add to the lower box 'main-box-in-row' 
-						 and 'child-box-in-row' to the higher box -->
-					<div class="dashboard-box child-box-in-row"> 
-						<div class="headline">
-							<h3><i class="icon-material-outline-note-add"></i> Notes</h3>
-						</div>	
-
-						<div class="content with-padding">
-							<!-- Note -->
-							<div class="dashboard-note">
-								<p>Look for programmer jobs</p>
-								<div class="note-footer">
-									<span class="note-priority high">High Priority</span>
-									<div class="note-buttons">
-										<a href="#" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-										<a href="#" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
-									</div>
-								</div>
-							</div>
-							<!-- Note -->
-							<div class="dashboard-note">
-								<p>Send payment to Rahman</p>
-								<div class="note-footer">
-									<span class="note-priority low">Low Priority</span>
-									<div class="note-buttons">
-										<a href="#" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-										<a href="#" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-							<div class="add-note-button">
-								<a href="#small-dialog" class="popup-with-zoom-anim button full-width button-sliding-icon">Add Note <i class="icon-material-outline-arrow-right-alt"></i></a>
-							</div>
-					</div>
-					<!-- Dashboard Box / End -->
-				</div>
-			</div>
-			<!-- Row / End -->
-
 			<!-- Row -->
 			<div class="row">
 
 				<!-- Dashboard Box -->
-				<div class="col-x-6">
-					<div class="dashboard-box">
+				<div class="col-xl-6">
+					<div class="dashboard-box margin-top-0">
+
+						<!-- Headline -->
 						<div class="headline">
-							<h3><i class="icon-material-baseline-notifications-none"></i> Job Alerts</h3>
-							<button class="mark-as-read ripple-effect-dark" data-tippy-placement="left" title="Mark all as read">
-									<i class="icon-feather-check-square"></i>
-							</button>
+							<h3><i class="icon-material-outline-business"></i> Rate Employer</h3>
 						</div>
+
 						<div class="content">
 							<ul class="dashboard-box-list">
 								<li>
-									<span class="notification-icon"><i class="icon-line-awesome-briefcase"></i></span>
-									<span class="notification-text">
-										<strong>Celcom Co</strong> viewed your resume for a job <a href="#">Full Stack Software Engineer</a>
-									</span>
-									<!-- Buttons -->
-									<div class="buttons-to-right">
-										<a href="#" class="button ripple-effect ico" title="Mark as read" data-tippy-placement="left"><i class="icon-feather-check-square"></i></a>
+									<div class="boxed-list-item">
+										<!-- Content -->
+										<div class="item-content">
+											<h4>Celcom Co</h4>
+											<span class="company-not-rated margin-bottom-5">Not Rated</span>
+										</div>
 									</div>
+
+									<a href="#small-dialog-2" class="popup-with-zoom-anim button ripple-effect margin-top-5 margin-bottom-10"><i class="icon-material-outline-thumb-up"></i> Leave a Review</a>
+								</li>
+								
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Dashboard Box -->
+				<div class="col-xl-6">
+					<div class="dashboard-box margin-top-0">
+
+						<!-- Headline -->
+						<div class="headline">
+							<h3><i class="icon-material-outline-face"></i> Rate Agency</h3>
+						</div>
+
+						<div class="content">
+							<ul class="dashboard-box-list">
+								<li>
+									<div class="boxed-list-item">
+										<!-- Content -->
+										<div class="item-content">
+											<h4>FCB KL</h4>
+											<span class="icon-material-outline-check-circle company-rated margin-bottom-5"> Rated</span>
+										</div>
+									</div>
+
 								</li>
 								<li>
-									<span class="notification-icon"><i class="icon-line-awesome-briefcase"></i></span>
-									<span class="notification-text">
-										<strong>FCB KL</strong> approved your positioning for <a href="#">Senior HR</a> task
-									</span>
-									<!-- Buttons -->
-									<div class="buttons-to-right">
-										<a href="#" class="button ripple-effect ico" title="Mark as read" data-tippy-placement="left"><i class="icon-feather-check-square"></i></a>
+									<div class="boxed-list-item">
+										<!-- Content -->
+										<div class="item-content">
+											<h4>Wearing it Blue for Autism</h4>
+											<div class="item-details margin-top-10">
+												<div class="star-rating" data-rating="5.0"></div>
+												<div class="detail-item"><i class="icon-material-outline-date-range"></i> August 2018</div>
+											</div>
+											<div class="item-description">
+												<p>Exciting program!</p>
+											</div>
+										</div>
 									</div>
+									<a href="#small-dialog-1" class="popup-with-zoom-anim button gray ripple-effect margin-top-5 margin-bottom-10"><i class="icon-feather-edit"></i> Edit Review</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 			<!-- Row / End -->
 
@@ -329,7 +265,7 @@
 			<div class="dashboard-footer-spacer"></div>
 			<div class="small-footer margin-top-15">
 				<div class="small-footer-copyrights">
-					© 2019 <strong>SPPPKP</strong>. All Rights Reserved.
+					© 2018 <strong>Hireo</strong>. All Rights Reserved.
 				</div>
 				<ul class="footer-social-links">
 					<li>
@@ -366,6 +302,167 @@
 
 </div>
 <!-- Wrapper / End -->
+
+<!-- Edit Review Popup 
+================================================== -->
+<div id="small-dialog-1" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+
+	<!--Tabs -->
+	<div class="sign-in-form">
+
+		<ul class="popup-tabs-nav">
+		</ul>
+
+		<div class="popup-tabs-container">
+
+			<!-- Tab -->
+			<div class="popup-tab-content" id="tab1">
+				
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Change Review</h3>
+					<span>Rate <a href="#">FCB KL</a> for the project <a href="#">Wearing it Blue for Autism</a> </span>
+				</div>
+					
+				<!-- Form -->
+				<form method="post" id="change-review-form">
+
+					<div class="feedback-yes-no">
+						<strong>Was this delivered on budget?</strong>
+						<div class="radio">
+							<input id="radio-rating-1" name="radio" type="radio" checked>
+							<label for="radio-rating-1"><span class="radio-label"></span> Yes</label>
+						</div>
+
+						<div class="radio">
+							<input id="radio-rating-2" name="radio" type="radio">
+							<label for="radio-rating-2"><span class="radio-label"></span> No</label>
+						</div>
+					</div>
+
+					<div class="feedback-yes-no">
+						<strong>Was this delivered on time?</strong>
+						<div class="radio">
+							<input id="radio-rating-3" name="radio2" type="radio" checked>
+							<label for="radio-rating-3"><span class="radio-label"></span> Yes</label>
+						</div>
+
+						<div class="radio">
+							<input id="radio-rating-4" name="radio2" type="radio">
+							<label for="radio-rating-4"><span class="radio-label"></span> No</label>
+						</div>
+					</div>
+
+					<div class="feedback-yes-no">
+						<strong>Your Rating</strong>
+						<div class="leave-rating">
+							<input type="radio" name="rating" id="rating-1" value="1" checked/>
+							<label for="rating-1" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-2" value="2"/>
+							<label for="rating-2" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-3" value="3"/>
+							<label for="rating-3" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-4" value="4"/>
+							<label for="rating-4" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-5" value="5"/>
+							<label for="rating-5" class="icon-material-outline-star"></label>
+						</div><div class="clearfix"></div>
+					</div>
+
+					<textarea class="with-border" placeholder="Comment" name="message" id="message" cols="7" required>Exciting program!</textarea>
+
+				</form>
+				
+				<!-- Button -->
+				<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="change-review-form">Save Changes <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Edit Review Popup / End -->
+
+
+<!-- Leave a Review for Popup
+================================================== -->
+<div id="small-dialog-2" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+
+	<!--Tabs -->
+	<div class="sign-in-form">
+
+		<ul class="popup-tabs-nav">
+		</ul>
+
+		<div class="popup-tabs-container">
+
+			<!-- Tab -->
+			<div class="popup-tab-content" id="tab2">
+				
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Leave a Review</h3>
+					<span>Rate Celcom Co </span>
+				</div>
+					
+				<!-- Form -->
+				<form method="post" id="leave-review-form">
+
+					<div class="feedback-yes-no">
+						<strong>Was this delivered on budget?</strong>
+						<div class="radio">
+							<input id="radio-1" name="radio" type="radio" required>
+							<label for="radio-1"><span class="radio-label"></span> Yes</label>
+						</div>
+
+						<div class="radio">
+							<input id="radio-2" name="radio" type="radio" required>
+							<label for="radio-2"><span class="radio-label"></span> No</label>
+						</div>
+					</div>
+
+					<div class="feedback-yes-no">
+						<strong>Was this delivered on time?</strong>
+						<div class="radio">
+							<input id="radio-3" name="radio2" type="radio" required>
+							<label for="radio-3"><span class="radio-label"></span> Yes</label>
+						</div>
+
+						<div class="radio">
+							<input id="radio-4" name="radio2" type="radio" required>
+							<label for="radio-4"><span class="radio-label"></span> No</label>
+						</div>
+					</div>
+
+					<div class="feedback-yes-no">
+						<strong>Your Rating</strong>
+						<div class="leave-rating">
+							<input type="radio" name="rating" id="rating-radio-1" value="1" required>
+							<label for="rating-radio-1" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-radio-2" value="2" required>
+							<label for="rating-radio-2" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-radio-3" value="3" required>
+							<label for="rating-radio-3" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-radio-4" value="4" required>
+							<label for="rating-radio-4" class="icon-material-outline-star"></label>
+							<input type="radio" name="rating" id="rating-radio-5" value="5" required>
+							<label for="rating-radio-5" class="icon-material-outline-star"></label>
+						</div><div class="clearfix"></div>
+					</div>
+
+					<textarea class="with-border" placeholder="Comment" name="message2" id="message2" cols="7" required></textarea>
+
+				</form>
+				
+				<!-- Button -->
+				<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="leave-review-form">Leave a Review <i class="icon-material-outline-arrow-right-alt"></i></button>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Leave a Review Popup / End -->
 
 
 <!-- Apply for a job popup
